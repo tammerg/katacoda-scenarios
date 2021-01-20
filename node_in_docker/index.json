@@ -1,0 +1,24 @@
+{
+  "title": "Introduction to Node with Docker",
+  "description": "An introduction to running a Node application with Docker",
+  "difficulty": "Beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": ""
+    },
+    "environment": {
+      "uilayout": "terminal"
+    },
+    "backend": {
+      "imageid": "python"
+    }
+  }
+}
