@@ -1,6 +1,6 @@
 {
-  "title": "Introduction to Node with Docker",
-  "description": "An introduction to running a Node application with Docker",
+  "title": "Dockerize a Node Application",
+  "description": "Learn to turn to Dockerize a NodeJS Application",
   "difficulty": "Beginner",
   "time": "15 minutes",
   "details": {
@@ -11,14 +11,13 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
-      "code": ""
+      "text": "intro.md"
     },
     "environment": {
       "uilayout": "terminal"
     },
     "backend": {
-      "imageid": "python"
+      "imageid": "node"
     }
   }
 }
