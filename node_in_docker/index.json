@@ -1,23 +1,24 @@
 {
-  "title": "Dockerize a Node Application",
-  "description": "Learn to turn to Dockerize a NodeJS Application",
-  "difficulty": "Beginner",
-  "time": "15 minutes",
+  "title": "Dockerizing a Node Application",
+  "description": "Learn how to take an existing node application and run it through a dockerfile",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1 - Scenario Structure",
         "text": "step1.md"
       }
     ],
     "intro": {
       "text": "intro.md"
     },
-    "environment": {
-      "uilayout": "terminal"
-    },
-    "backend": {
-      "imageid": "nodejs:12"
+    "finish": {
+      "text": "finish.md"
     }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "nodejs:12"
   }
 }
