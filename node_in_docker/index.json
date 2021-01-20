@@ -4,11 +4,20 @@
   "difficulty": "Beginner",
   "time": "15 minutes",
   "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      }
+    ],
     "intro": {
       "text": "intro.md"
     },
     "environment": {
       "uilayout": "terminal"
+    },
+    "backend": {
+      "imageid": "nodejs:12"
     }
   }
 }
