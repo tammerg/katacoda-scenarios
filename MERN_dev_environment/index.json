@@ -5,7 +5,7 @@
     "steps": [
       {
         "title": "Step 1 - Verify the Environment ",
-        "code": "step1-background.sh",
+        "courseData": "step1-background.sh",
         "text": "step1.md"
       },
       {

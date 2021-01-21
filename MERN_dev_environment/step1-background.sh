@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd /usr/
+cd /usr/bin
 
 rm -r nodejs npm npx
