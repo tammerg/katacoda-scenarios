@@ -5,6 +5,7 @@
     "steps": [
       {
         "title": "Step 1 - Verify the Environment ",
+        "courseData": "remove_node.sh",
         "text": "step1.md"
       },
       {
