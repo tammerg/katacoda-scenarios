@@ -1,6 +1,6 @@
 {
-  "title": "Dockerizing a Node Application",
-  "description": "Learn how to take an existing node application and run it through a dockerfile",
+  "title": "Create a MERN Development Enviroment with Docker",
+  "description": "Learn how to create a reusable development environment with Docker",
   "details": {
     "steps": [
       {
