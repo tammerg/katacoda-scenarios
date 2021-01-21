@@ -6,6 +6,10 @@
       {
         "title": "Step 1 - Verify the Environment ",
         "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Create our Dockerfile",
+        "text": "step2.md"
       }
     ],
     "intro": {
@@ -16,7 +20,7 @@
     }
   },
   "environment": {
-    "uilayout": "vscode-terminal-split"
+    "showide": true
   },
   "backend": {
     "imageid": "ubuntu:1804"

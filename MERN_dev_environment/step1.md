@@ -1,5 +1,3 @@
-# Step 1 
-
 In our first step, we are going to validate that the environment we loaded up is what we wanted! 
 
 Let's go ahead and check our versions of Ubuntu and Docker by entering the following commands:
@@ -15,3 +13,5 @@ On the "Description" line you will see we are running on `Ubuntu 18.04 LTS`. Nex
 ```bash
 docker version
 ```{{execute}}
+
+Great, let's move on to setting up our Dockerfile
