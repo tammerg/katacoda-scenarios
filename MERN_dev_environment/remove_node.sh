@@ -1,3 +1,5 @@
-echo "cd /usr/"
+#!/bin/bash
 
-echo "rm -r nodejs npm npx"
+cd /usr/
+
+rm -r nodejs npm npx
