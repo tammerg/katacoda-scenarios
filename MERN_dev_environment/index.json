@@ -5,7 +5,7 @@
     "steps": [
       {
         "title": "Step 1 - Verify the Environment ",
-        "courseData": "step1-background.sh",
+        "code": "step1-background.sh",
         "text": "step1.md"
       },
       {
@@ -21,8 +21,7 @@
     }
   },
   "environment": {
-    "uilayout": "vscode-terminal-split",
-    "showide": true
+    "uilayout": "vscode-terminal-split"
   },
   "backend": {
     "imageid": "ubuntu:1804"
