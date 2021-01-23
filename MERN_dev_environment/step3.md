@@ -43,13 +43,15 @@ EXPOSE 5000
 CMD ["index.js"]
 </pre>
 
-Excellent! We provisioned a node container with none of the frills by adding the `-slim` option.
+Great! Now let's quickly take a look at the code we entered.
 
-Next we set our WORKDIR and copied the contents of our `package.json` and `yarn.lock` into our WORKDIR.
+First, we chose the base image from which we would like to build `FROM`. In this case we chose `node:14-slim`. The `-slim` tag denotes we are obtaining an image that contains only the necessities to run `node`.
 
-We run `yarn install` and copy the subsequent contents into our WORKDIR. 
+Next we set our `WORKDIR` or working directory to be `/usr/src/app`. This directory is where `RUN`, `CMD`, and `COPY` instructions will execute. So, we then copy all of the contents of `package.json` and `yarn.lock` into our `WORKDIR` via `./`.
 
-Because we would like to run this server on port 5000 we expose that port and then give the CMD of `index.js`. This Dockerfile will properly build our backend server for use! The frontend client is going to look extremely similar, with the only changes being the EXPOSEd port and the CMD.
+We can then run `yarn install`. After its complete we `COPY` all of the contents from our src `.` and get it all copied to our container `.`. By using the `EXPOSE` instruction we can let Docker know the container needs to listen on the exposed port when we run our dockerfile. Finally, just like we would do normally we use the `CMD` or command instruction to run `index.js`.
+
+This Dockerfile will properly build our backend server for use! The frontend client is going to look extremely similar, with the only changes being the EXPOSEd port and the CMD.
 
 ```bash
 cd ..

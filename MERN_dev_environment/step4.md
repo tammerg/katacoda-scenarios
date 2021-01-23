@@ -15,35 +15,25 @@ services:
       - "3000:3000"
     networks:
       - movies-app
-
   app-server:
     image: app-server
     ports:
       - "5000:5000"
     depends_on: 
       - mongo
-    networks:
-      - movies-app
-
   mongo:
     image: mongo:latest
     ports:
       - "27017:27017"
-    networks:
-      - movies-app
-    volumes:
-      - mongo-data:/data/db
-
-networks:
-  movies-app:
-    driver: bridge
-
-volumes:
-  mongo-data:
-    driver: local
 </pre>
 
-Well...let's see if it works! Enter the following single command to fire up all of your images and provision a DB:
+Wow! That seems like a lot, bit it is actually quite a bit of repetition. Let's start at the top. Our `services` are the 3 containers we would like to run, our `react-client`, `app-server`, and `mongo`. The first property in each of the services is the `image` we want to create the container based on. In this instance we use the two builds we made, `react-client` and `app-server`. 
+
+For mongo, we use DockerHub to pull the `latest` version of `mongo`. What does the `latest` tag denote? Well, the `latest` tag will pull the current LTS version of an image from DockerHub
+
+Next, with the `ports` option we expose and set the public ports for port binding. 
+
+The only other difference between services is in our `react-client` container we use the `stdin_open: true` option to keep it open for requests after starting our environment. The last step for us is to set the `depends_on` option in `app-server` to `- mongo`. This is because our server needs to connect to MongoDB, we can specify this depends on so that `mongo` will start first. Well...thats it! Let's enter that final command at the root of `MERN_app_unsolved`:
 
 ```bash
 docker-compose up
