@@ -21,6 +21,7 @@
     }
   },
   "environment": {
+    "showdashboard": true,
     "dashboards": 
     [
       {"name": "Port 80", "port": 80},
