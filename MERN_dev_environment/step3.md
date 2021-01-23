@@ -10,7 +10,7 @@ pwd
 
 You'll see we are in `/root/movies-app/server`
 
-We can create a new Dockerfile with:
+We can start by first getting our server setup. Let's create a new Dockerfile:
 
 ```bash
 touch /root/movies-app/server/Dockerfile
@@ -22,7 +22,7 @@ Now we need to open it in our editor:
 /root/movies-app/server/Dockerfile
 ```{{open}}
 
-**Note**: If the above command does not open it, navigate to the newly created Dockerfile at the path listed above.
+**Note**: If the above command does not open /server/Dockerfile, manually navigate to the newly created Dockerfile in the file tree on the right hand side of the screen.
 
 Copy the following code into your Dockerfile, then we will cover what we entered:
 
@@ -58,13 +58,13 @@ cd client
 touch /root/movies-app/client/Dockerfile
 ```{{execute}}
 
-Due to some browser limitations, let's close the Dockerfile we just completed before we open our newly created one. Next, open the client Dockerfile:
+Due to some browser limitations, let's close the Dockerfile we just completed before we open our newly created one.
 
 ```bash
 /root/movies-app/client/Dockerfile
 ```{{open}}
 
-**Note**: If the above command does not open it, navigate to the newly created Dockerfile at the path listed above.
+**Note**: If the above command does not open /server/Dockerfile, manually navigate to the newly created Dockerfile in the file tree on the right hand side of the screen.
 
 Finally, copy the following:
 
