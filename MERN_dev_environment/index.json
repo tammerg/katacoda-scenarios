@@ -21,11 +21,8 @@
     }
   },
   "environment": {
-    "showdashboard": true,
-    "environment": {
-      "uilayout": "editor-terminal",
-      "uisettings": "javascript"
-  },
+    "uilayout": "editor-terminal",
+    "uisettings": "javascript",
     "showhide": true,
     "ideport": 3001
   },
