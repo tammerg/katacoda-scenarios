@@ -8,8 +8,34 @@ Here comes Docker with the solution. We will create two seperate containers, one
 cd client
 ```{{execute}}
 
-We first need to create a new Dockerfile and open it in our editor.
+We first need to create a new Dockerfile:
 
 ```bash
 touch Dockerfile
-```{{execute}}{{open}}
+```{{execute}}
+
+Now we need to open it:
+
+```bash
+Dockerfile
+```{{open}}
+
+Copy the following code into your Dockerfile, then we will cover what we entered:
+
+<pre class="file" data-filename="file" data-target="append">
+FROM node:14-slim
+
+WORKDIR /usr/src/app
+
+COPY ./package.json ./
+COPY ./yarn.lock ./
+
+RUN yarn install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["yarn", "start"]
+</pre>
+
