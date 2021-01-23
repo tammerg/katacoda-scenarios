@@ -81,4 +81,17 @@ EXPOSE 3000
 CMD ["yarn", "start"]
 </pre>
 
+Now let's build our Docker images from these newly made `Dockerfiles`. Run the following commands:
+
+```bash
+cd ..
+docker build -t react-client ./client/
+```{{execute}}
+
+Once that completes, build the backend image:
+
+```bash
+docker build -t app-server ./server/
+```{{execute}}
+
 Anddd we're done! Actually, we only need to do one more step. We are going to use `docker-compose` to run our two images in tandem, and provision us an instance of `MongoDB` at the same time. See you in our final step!
