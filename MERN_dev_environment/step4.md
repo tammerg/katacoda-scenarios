@@ -1,9 +1,10 @@
-Finally at the root of your project, create a `docker-compose.yml` file and enter the following:
+Why do we even need `docker-compose`? Well, docker-compose will allow us to setup our containers to run in tandem, and provision and mongoDB container in the same instruction to get our environment fully running in a single command. We are going to create our docker-compose with `yml`, but other extensions can be used.
+
+At the root of your project, create a `docker-compose.yml` file and enter the following:
 
 ```bash
 touch /root/movies-app/docker-compose.yml
 ```{{execute}}
-
 
 <pre class="file" data-filename="/root/movies-app/docker-compose.yml" data-target="append">
 version: "3.4"
