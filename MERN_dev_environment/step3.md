@@ -22,6 +22,8 @@ Now we need to open it in our editor:
 /root/movies-app/server/Dockerfile
 ```{{open}}
 
+**Note**: If the above command does not open it, navigate to the newly created Dockerfile at the path listed above.
+
 Copy the following code into your Dockerfile, then we will cover what we entered:
 
 <pre class="file" data-filename="/root/movies-app/server/Dockerfile" data-target="replace">
@@ -56,11 +58,13 @@ cd client
 touch /root/movies-app/client/Dockerfile
 ```{{execute}}
 
-Next:
+Due to some browser limitations, let's close the Dockerfile we just completed before we open our newly created one. Next, open the client Dockerfile:
 
 ```bash
 /root/movies-app/client/Dockerfile
 ```{{open}}
+
+**Note**: If the above command does not open it, navigate to the newly created Dockerfile at the path listed above.
 
 Finally, copy the following:
 
