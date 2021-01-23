@@ -24,7 +24,7 @@ Dockerfile
 
 Copy the following code into your Dockerfile, then we will cover what we entered:
 
-<pre class="file" data-filename="file" data-target="append">
+<pre class="file" data-filename="Dockerfile" data-target="append">
 FROM node:14-slim
 
 WORKDIR /usr/src/app
@@ -64,7 +64,7 @@ Dockerfile
 
 Finally, copy the following:
 
-<pre class="file" data-filename="file" data-target="append">
+<pre class="file" data-filename="Dockerfile" data-target="append">
 FROM node:14-slim
 
 WORKDIR /usr/src/app
