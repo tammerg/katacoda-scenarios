@@ -1,6 +1,6 @@
 {
-  "title": "Create a MERN Development Enviroment with Docker",
-  "description": "Learn how to create a reusable development environment with Docker",
+  "title": "Dockerize a MERN Application",
+  "description": "Learn how to spin up a full MERN environment with Docker and docker-compose",
   "details": {
     "steps": [
       {
@@ -11,6 +11,14 @@
       {
         "title": "Step 2 - Clone and Run our MERN application",
         "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Create our Dockerfiles",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Tie it together with docker-compose",
+        "text": "step4.md"
       }
     ],
     "intro": {
