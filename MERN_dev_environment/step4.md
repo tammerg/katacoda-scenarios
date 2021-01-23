@@ -13,8 +13,6 @@ services:
     stdin_open: true
     ports:
       - "3000:3000"
-    networks:
-      - movies-app
   app-server:
     image: app-server
     ports:
@@ -38,3 +36,7 @@ The only other difference between services is in our `react-client` container we
 ```bash
 docker-compose up
 ```{{execute}}
+
+Now that the compilation is complete, go ahead and click the `localhost:3000` tab in the terminal. 
+
+Congrats!

@@ -55,8 +55,10 @@ This Dockerfile will properly build our backend server for use! The frontend cli
 
 ```bash
 cd ..
+sleep 3
 pwd
 cd client
+sleep 3
 touch /root/movies-app/client/Dockerfile
 ```{{execute}}
 
@@ -91,6 +93,7 @@ Now let's build our Docker images from these newly made `Dockerfiles`. Run the f
 
 ```bash
 cd ..
+sleep 3
 docker build -t react-client ./client/
 ```{{execute}}
 
