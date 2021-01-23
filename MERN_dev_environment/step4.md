@@ -47,4 +47,4 @@ Well...let's see if it works! Enter the following single command to fire up all 
 
 ```bash
 docker-compose up
-```
+```{{execute}}
