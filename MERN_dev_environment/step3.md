@@ -13,7 +13,7 @@ You'll see we are in `/root/movies-app/server`
 We can create a new Dockerfile with:
 
 ```bash
-touch Dockerfile
+touch /root/movies-app/server/Dockerfile
 ```{{execute}}
 
 Now we need to open it in our editor:
@@ -24,7 +24,7 @@ Dockerfile
 
 Copy the following code into your Dockerfile, then we will cover what we entered:
 
-<pre class="file" data-filename="Dockerfile" data-target="replace">
+<pre class="file" data-filename="/root/movies-app/server/Dockerfile" data-target="replace">
 FROM node:14-slim
 
 WORKDIR /usr/src/app
@@ -53,7 +53,7 @@ Because we would like to run this server on port 5000 we expose that port and th
 cd ..
 pwd
 cd client
-touch Dockerfile
+touch /root/movies-app/client/Dockerfile
 ```{{execute}}
 
 Next:
@@ -64,7 +64,7 @@ Dockerfile
 
 Finally, copy the following:
 
-<pre class="file" data-filename="Dockerfile" data-target="replace">
+<pre class="file" data-filename="/root/movies-app/client/Dockerfile" data-target="replace">
 FROM node:14-slim
 
 WORKDIR /usr/src/app
