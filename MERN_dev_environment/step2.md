@@ -21,4 +21,4 @@ Hmmmm...Node doesn't seem to be installed on this environment. Let's see if othe
 mongod
 ```{{execute}}
 
-MongoDB doesn't seem to be installed either, we don't seem to have much of anything! Sadly an improperly setup environment is not new to most developers. We can solve this issue quickly and simply using two technologies `Docker` and `docker-compose`. By using these technologies properly we will have a replicatable environment without ever having to actually install anything on our local machine. Let's get coding!
+MongoDB doesn't seem to be installed either. We don't seem to have much of anything! Sadly, an improperly setup environment is not new to most developers. We can solve this issue quickly and simply using two technologies `Docker` and `docker-compose`. By using these technologies properly we will have a replicatable environment without ever having to actually install anything on our local machine. Let's get coding!
