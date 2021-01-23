@@ -19,7 +19,7 @@ touch /root/movies-app/server/Dockerfile
 Now we need to open it in our editor:
 
 ```bash
-Dockerfile
+/root/movies-app/server/Dockerfile
 ```{{open}}
 
 Copy the following code into your Dockerfile, then we will cover what we entered:
@@ -59,7 +59,7 @@ touch /root/movies-app/client/Dockerfile
 Next:
 
 ```bash
-Dockerfile
+/root/movies-app/client/Dockerfile
 ```{{open}}
 
 Finally, copy the following:
