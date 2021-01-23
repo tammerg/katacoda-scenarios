@@ -31,7 +31,7 @@
   "environment": {
     "showdashboard": true,
     "dashboards": [
-      {"name": "Placeholder", "href": "https://ancient-earth-17585.herokuapp.com/https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com"}
+      {"name": "Placeholder", "href": "https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com"}
     ],
     "uilayout": "editor-terminal",
     "uisettings": "javascript",

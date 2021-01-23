@@ -92,10 +92,22 @@ cd ..
 docker build -t react-client ./client/
 ```{{execute}}
 
-Once that completes, build the backend image:
+The build process can take anywhere from a few seconds to a few minutes. Once complete you will see a line like the following:
+
+```bash
+Successfully tagged react-client:latest
+```
+
+Once complete, go ahead and build the backend image:
 
 ```bash
 docker build -t app-server ./server/
 ```{{execute}}
 
-Anddd we're done! Actually, we only need to do one more step. We are going to use `docker-compose` to run our two images in tandem, and provision us an instance of `MongoDB` at the same time. See you in our final step!
+When this is complete you should see a line like the following:
+
+```bash
+Successfully tagged app-server:latest
+```
+
+Anddddddd we're done! Actually...we need to complete one more step. We are going to use `docker-compose` to run our two images in tandem, and provision us an instance of `MongoDB` at the same time. See you in our final step!
