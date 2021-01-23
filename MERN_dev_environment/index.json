@@ -21,7 +21,13 @@
     }
   },
   "environment": {
-    "uilayout": "vscode-terminal-split"
+    "dashboards": 
+    [
+      {"name": "Port 80", "port": 80},
+      {"name": "Placeholder", "href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com"}],
+    "uilayout": "terminal",
+    "showhide": true,
+    "ideport": 3001
   },
   "backend": {
     "imageid": "ubuntu:1804"
