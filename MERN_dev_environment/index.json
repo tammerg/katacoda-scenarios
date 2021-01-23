@@ -9,7 +9,7 @@
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Create our Dockerfile",
+        "title": "Step 2 - Clone and Run our MERN application",
         "text": "step2.md"
       }
     ],
@@ -22,11 +22,10 @@
   },
   "environment": {
     "showdashboard": true,
-    "dashboards": 
-    [
-      {"name": "Port 80", "port": 80},
-      {"name": "Placeholder", "href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com"}],
-    "uilayout": "terminal",
+    "environment": {
+      "uilayout": "editor-terminal",
+      "uisettings": "javascript"
+  },
     "showhide": true,
     "ideport": 3001
   },
